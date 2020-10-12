@@ -2,10 +2,12 @@ import React from "react";
 import Container from "./Container";
 import Search from "./Search";
 
-const Hero = () => {
+const Hero = (props) => {
+  const { inputVal, setInputVal } = props;
+
   return (
     <section className="hero">
-      <Search />
+      <Search inputVal={inputVal} setInputVal={setInputVal} />
       <Container></Container>
     </section>
   );
