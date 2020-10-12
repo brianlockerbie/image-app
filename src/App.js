@@ -10,6 +10,11 @@ const App = () => {
   const [search, setSearch] = useState('');
   const [inputVal, setInputVal] = useState('');
 
+  const handleSearch = e => {
+    e.preventDefault();
+    setSearch(inputVal);
+  }
+
   //useEffect(() => {
   //  fetch(
   //    `https://pixabay.com/api/?key=${API_KEY}&q=${search}&image_type=photo&per_page=9&page=${currentPage}&pretty=true`
@@ -23,6 +28,7 @@ const App = () => {
       <Hero 
         inputVal={inputVal}
         setInputVal={setInputVal}
+        handleSearch={handleSearch}
       />
     </div>
   );
