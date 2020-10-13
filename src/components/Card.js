@@ -32,6 +32,18 @@ const Card = ({ images }) => {
                     <span>Likes:</span>
                     {image.likes}
                   </p>
+                  <p>
+                    <i className="fas fa-comment"></i>
+                    <span>Comments:</span>
+                    {image.comments}
+                  </p>
+                  <div className="tags">
+                    {image.tags
+                      .split(",")
+                      .map((tag, index) =>
+                        tag.length >= 11 ? "" : <span key={index}>#{tag}</span>
+                      )}
+                  </div>
                 </div>
               </a>
             </div>
