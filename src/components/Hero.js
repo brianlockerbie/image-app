@@ -4,7 +4,7 @@ import Search from "./Search";
 import Card from "./Card";
 
 const Hero = (props) => {
-  const { inputVal, setInputVal, handleSearch, images } = props;
+  const { inputVal, setInputVal, handleSearch, images, newImages } = props;
 
   return (
     <section className="hero">
@@ -14,11 +14,15 @@ const Hero = (props) => {
         handleSearch={handleSearch}
       />
       <Container>
-        <Card images={images}/>
-        <div className="btnContainer">
-          <button>Previous</button>
-          <button>Next</button>
-        </div>
+        <Card images={images} />
+        {images.length === 0 ? (
+          <h1>No images found...</h1>
+        ) : (
+          <div className="btnContainer">
+            <button onClick={() => newImages("previous")}>Previous</button>
+            <button onClick={() => newImages("next")}>Next</button>
+          </div>
+        )}
       </Container>
     </section>
   );
