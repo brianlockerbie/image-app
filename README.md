@@ -2,6 +2,8 @@
 
 <p align="center">Search Image App</p>
 
+## 🕹 Live Demo: https://agitated-mclean-c5ca52.netlify.app/
+
 
 ## 🎮 How to play
 1. Type what your looking for in the search bard and press enter.
