@@ -2,7 +2,7 @@
 
 <p align="center">Search Image App</p>
 
-## 🕹 Live Demo: https://agitated-mclean-c5ca52.netlify.app/
+## 🕹 Live Demo: https://image-app.netlify.app/
 
 
 ## 🎮 How to play
